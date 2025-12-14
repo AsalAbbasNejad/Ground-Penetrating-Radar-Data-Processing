@@ -1,5 +1,4 @@
-
-![521580794-a8d89660-fdab-4bad-a6de-baf34634f21e](https://github.com/user-attachments/assets/9b1c034d-d9ef-4b3c-b857-472dff74a50c)
+![2](https://github.com/user-attachments/assets/a8d89660-fdab-4bad-a6de-baf34634f21e)
 
 # GPR Concrete Wall Analysis
 
@@ -12,13 +11,12 @@ The dataset consists of 15 parallel vertical profiles collected with the followi
 
 | Parameter | Value |
 | :--- | :--- |
-| Nominal Frequency | 3 GHz |
-| Polarization | HH |
-| TX-RX Distance | 6 cm |
-| Profile Inter-distance | 10 cm |
-| Trace Increment | 4 mm |
-| Total Traces | 6752 |
-
+| **Nominal Frequency** | 3 GHz |
+| **Polarization** | HH |
+| **TX-RX Distance** | 6 cm |
+| **Profile Inter-distance** | 10 cm |
+| **Trace Increment** | 4 mm |
+| **Total Traces** | 6752 |
 
 ---
 
@@ -26,24 +24,24 @@ The dataset consists of 15 parallel vertical profiles collected with the followi
 The data was processed using Reflexw software through the following pipeline:
 
 ### 1. Static Correction & Alignment
-* Phase Correction: We applied the "correct max. phase" operation two times to align all profiles effectively.
-* Time Calibration: The start time was moved by -0.9 ns to calibrate the zero-time surface reflection.
+* **Phase Correction:** We applied the "correct max. phase" operation two times to align all profiles effectively.
+* **Time Calibration:** The start time was moved by -0.9 ns to calibrate the zero-time surface reflection.
 
 ### 2. Signal Filtering
 To improve the signal-to-noise ratio:
-* Bandpass Butterworth Filter: Applied to isolate the most energetic region of the spectrum (Lower Cutoff: 650 MHz, Upper Cutoff: 4030 MHz).
-* Background Subtraction: A subtracting average procedure (window: 250 traces) was used to remove background noise and horizontal ringing.
+* **Bandpass Butterworth Filter:** Applied to isolate the most energetic region of the spectrum (Lower Cutoff: 650 MHz, Upper Cutoff: 4030 MHz).
+* **Background Subtraction:** A subtracting average procedure (window: 250 traces) was used to remove background noise and horizontal ringing.
 
 ### 3. Velocity Analysis & Migration
-* Velocity Analysis: By fitting diffraction hyperbolas, the propagation velocity was estimated at 0.135 m/ns.
-* Migration (Diffraction Stack): This step collapsed the diffraction hyperbolas to correctly position the targets. A summation width of 50 was calculated based on the hyperbola aperture (~0.2m).
+* **Velocity Analysis:** By fitting diffraction hyperbolas, the propagation velocity was estimated at 0.135 m/ns.
+* **Migration (Diffraction Stack):** This step collapsed the diffraction hyperbolas to correctly position the targets. A summation width of 50 was calculated based on the hyperbola aperture (~0.2m).
 
 ### 4. Visualization
-* Envelope Extraction: Calculated to visualize signal energy strength.
-* 3D Modeling: A 3D cube was generated to view the rebar grid in volumetric space.
+* **Envelope Extraction:** Calculated to visualize signal energy strength.
+* **3D Modeling:** A 3D cube was generated to view the rebar grid in volumetric space.
 
 
 ## Results
-* Rebar Spacing: The analysis revealed a clear grid with rebars spaced approximately 0.2 m (20 cm) apart.
-* Target Depth: The reinforcement bars are located at a depth of approximatel 5 cm.
-* Structure: The 3D view highlighted that the rebars are not perfectly straight, indicating variations during the construction phase.
+* **Rebar Spacing:** The analysis revealed a clear grid with rebars spaced approximately 0.2 m (20 cm) apart.
+* **Target Depth:** The reinforcement bars are located at a depth of approximatel 5 cm.
+* **Structure:** The 3D view highlighted that the rebars are not perfectly straight, indicating variations during the construction phase.
